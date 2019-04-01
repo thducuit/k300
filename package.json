@@ -1,0 +1,38 @@
+{
+  "name": "k300",
+  "version": "1.0.0",
+  "description": "react theme k300",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thducuit/k300.git"
+  },
+  "keywords": [
+    "react",
+    "theme",
+    "k300"
+  ],
+  "author": "k300",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thducuit/k300/issues"
+  },
+  "homepage": "https://github.com/thducuit/k300#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
