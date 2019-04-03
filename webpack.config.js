@@ -18,6 +18,13 @@ module.exports = {
             presets: ['env']
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
       }
     ]
   },

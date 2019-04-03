@@ -1,6 +1,10 @@
-import ReactColorSquare from './ReactColorSquare.js';
-import ReactColorText from './ReactColorText.js';
+import Header from './Header';
+import Sidebar from './Sidebar.js';
+import Nav from './Nav.js';
+import './style.css';
+
 export {
-  ReactColorSquare,
-  ReactColorText
+  Header,
+  Nav,
+  Sidebar
 }
