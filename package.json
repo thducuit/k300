@@ -1,6 +1,6 @@
 {
   "name": "k300",
-  "version": "1.0.63",
+  "version": "1.0.68",
   "description": "react theme k300",
   "main": "build/index.js",
   "scripts": {
