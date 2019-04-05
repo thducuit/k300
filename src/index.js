@@ -1,6 +1,6 @@
 import Header from './Header';
 import Sidebar from './Sidebar.js';
-import Nav from './Nav.js';
+import Nav from './Layout/Nav';
 import Search from './Search.js';
 import Content from './Content.js';
 import Breadcrumb from './Breadcrumb.js';

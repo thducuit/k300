@@ -1,13 +1,26 @@
 import React from "react";
+import Input from "./Form/Input";
+import Button from "./Form/Button";
 
 const Search = props => {
-  const { color, text } = props;
+  const { children } = props;
+
+  if(children) {
+    return (
+      <div id="search">
+        {children}
+      </div>
+    );
+  }
+
+  //default search
   return (
     <div id="search">
-        <input type="text" placeholder="Search here..."/>
-        <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+        <Input placeholder="Search now..." />
+        <Button icon="icon-search" title="Search"></Button>
     </div>
   );
+  
 };
 
 export default Search;

@@ -1,7 +1,15 @@
 import React from "react";
 
 const Header = props => {
-  const { background, text } = props;
+  const { background, text, children } = props;
+
+  if(children) {
+    <div id="header">
+        {children}
+    </div>
+  }
+
+  //default header
   return (
     <div id="header">
         <h1 style={{
