@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "./Form/Input";
-import Button from "./Form/Button";
+import Input from "../Form/Input";
+import Button from "../Form/Button";
 
 const Search = props => {
   const { children } = props;

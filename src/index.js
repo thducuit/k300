@@ -30,6 +30,10 @@ import TextArea from './Form/TextArea.js';
 //Elements
 import Search from './Element/Search';
 import Breadcrumb from './Element/Breadcrumb';
+import MenuDropdown from './Element/MenuDropdown';
+import MenuItem from './Element/MenuItem';
+import MenuCountLabel from './Element/MenuCountLabel';
+import Icon from './Element/Icon';
 
 import './style.css';
 
@@ -65,5 +69,9 @@ export {
 
   //Elements
   Search,
-  Breadcrumb
+  Breadcrumb,
+  MenuItem,
+  MenuDropdown,
+  MenuCountLabel,
+  Icon
 }

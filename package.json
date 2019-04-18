@@ -1,6 +1,6 @@
 {
   "name": "k300",
-  "version": "1.0.68",
+  "version": "1.0.78",
   "description": "react theme k300",
   "main": "build/index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/thducuit/k300#readme",
   "dependencies": {
     "react": "^16.8.6",
+    "react-router-dom": "^5.0.0",
     "webpack": "^4.29.6"
   },
   "devDependencies": {

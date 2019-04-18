@@ -7,7 +7,7 @@ const Button = props => {
   const typecls = type ? 'btn-'+type : 'btn-default';
   const minicls = mini ? 'btn-mini' : '';
   const cls = ['btn', typecls, tipcls, minicls].join(' ');
-  const buttontype = submit ? 'submit' : button;
+  const buttontype = submit ? 'submit' : 'button';
   
   if(children) {
     return (

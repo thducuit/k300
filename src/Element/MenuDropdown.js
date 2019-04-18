@@ -1,21 +1,15 @@
 import React from "react";
-import MenuItem from "./MenuItem";
+import MenuCountLabel from "./MenuCountLabel";
+import Icon from "./Icon";
 
 const MenuDropdown = props => {
-  const { active, text, icon, children } = props;
+  
+  const { children, text, number, open, icon, onClick } = props;
 
-  if(children) {
-    <li class="submenu"> 
-        {children}
-    </li>
-  }
-
-  //default Menu Dropdown
   return (
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
-        <ul>
-            <MenuItem>Test</MenuItem>
-        </ul>
+    <li class={ open ? "submenu open" : "submenu" }>
+        <a onClick={ onClick }>{ icon ? <Icon icon={icon} /> : null }<span>{text}</span>{ number ? <MenuCountLabel number={number} /> : null }</a>
+        {children}
     </li>
   );
 };
