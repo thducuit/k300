@@ -4,7 +4,7 @@ const StatsItem = props => {
   const { text, number, icon, children } = props;
 
   if(children) {
-    <li>{children}</li>
+    <li class="bg_lh">{children}</li>
   }
 
   return (

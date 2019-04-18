@@ -17,7 +17,7 @@ const Search = props => {
   return (
     <div id="search">
         <Input placeholder="Search now..." />
-        <Button icon="icon-search" title="Search"></Button>
+        <Button icon="icon-search" tip="Search"></Button>
     </div>
   );
   

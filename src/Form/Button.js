@@ -1,17 +1,23 @@
 import React from "react";
 
 const Button = props => {
-  const { title, icon, tip, text, children } = props;
+  const { icon, tip, text, children, submit, mini, type, disabled } = props;
 
+  const tipcls = tip ? 'tip' : '';
+  const typecls = type ? 'btn-'+type : 'btn-default';
+  const minicls = mini ? 'btn-mini' : '';
+  const cls = ['btn', typecls, tipcls, minicls].join(' ');
+  const buttontype = submit ? 'submit' : button;
+  
   if(children) {
     return (
-      <button type="button" class={ tip || "tip-bottom" } title={title}>{children}</button>
+      disabled ? <button disabled type={buttontype} class={cls} title={tip}>{children}</button> : <button type={buttontype} class={cls} title={tip}>{children}</button>
     );
   }
 
   //default button
   return (
-    <button type="button" class={ tip || "tip-bottom" } title={title}>{ icon ? <i class={icon}></i> : null  } {text}</button>
+    disabled ? <button disabled type={buttontype} class={cls} title={tip}>{ icon ? <i class={icon}></i> : null  } {text}</button> : <button type={buttontype} class={cls} title={tip}>{ icon ? <i class={icon}></i> : null  } {text}</button>
   );
 };
 
