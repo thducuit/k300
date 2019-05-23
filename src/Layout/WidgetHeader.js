@@ -1,11 +1,13 @@
 import React from "react";
+import Icon from "../Element/Icon";
 
 const WidgetHeader = props => {
+
   const { text, icon, children } = props;
 
   if(children) {
     return (
-      <div class="widget-title" data-toggle="collapse" href="#collapseG2">
+      <div class="widget-title">
           {children}
       </div>
     );
@@ -13,8 +15,8 @@ const WidgetHeader = props => {
 
   //default widget header
   return (
-    <div class="widget-title" data-toggle="collapse" href="#collapseG2">
-        { icon ? <span class="icon"><i class={icon}></i></span> : null }
+    <div class="widget-title">
+        { icon ? <span class="icon"><Icon icon={icon} /></span> : null }
         { text ? <h5>{text}</h5> : null }
     </div>
   );

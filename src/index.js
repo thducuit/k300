@@ -35,6 +35,14 @@ import MenuItem from './Element/MenuItem';
 import MenuCountLabel from './Element/MenuCountLabel';
 import Icon from './Element/Icon';
 
+//Table
+import Td from './Table/Td';
+import Th from './Table/Th';
+import Thead from './Table/Thead';
+import Tr from './Table/Tr';
+import Tbody from './Table/Tbody';
+import Table from './Table/Table';
+
 import './style.css';
 
 export {
@@ -73,5 +81,13 @@ export {
   MenuItem,
   MenuDropdown,
   MenuCountLabel,
-  Icon
+  Icon,
+
+  //Table
+  Td,
+  Th,
+  Tr,
+  Thead,
+  Tbody,
+  Table
 }

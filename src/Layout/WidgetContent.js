@@ -1,9 +1,14 @@
 import React from "react";
 
 const WidgetContent = props => {
-  const { children } = props;
+
+  const { children, nopadding } = props;
+
+  const clsPadding = nopadding ? 'nopadding' : '';
+  const cls = ['widget-content', clsPadding].join(' ');
+  
   return (
-    <div class="widget-content nopadding collapse in" id="collapseG2">
+    <div class={cls}>
         {children}
     </div>
   );

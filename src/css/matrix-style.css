@@ -534,8 +534,8 @@ hr{ border-top-color:#dadada;}
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.widget-title, .modal-header, .table th, div.dataTables_wrapper .ui-widget-header {
-	 background:#efefef;
+.widget-title, .modal-header, .widget-box .table th, div.dataTables_wrapper .ui-widget-header {
+	background:#efefef;
 	border-bottom: 1px solid #CDCDCD;
 	height: 36px;  
 }
